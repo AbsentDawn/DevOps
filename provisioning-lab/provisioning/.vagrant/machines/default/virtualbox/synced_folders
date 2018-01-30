@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/ubuntu/db":{"guestpath":"/home/ubuntu/db","hostpath":"/Users/Tech-A33/Desktop/Devops-classwork/provisioning-lab/provisioning/environment/db","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Tech-A33/Desktop/Devops-classwork/provisioning-lab/provisioning","disabled":false,"__vagrantfile":true}}}
