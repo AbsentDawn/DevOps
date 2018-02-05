@@ -17,6 +17,9 @@ Vagrant.configure("2") do |config|
 
 	  # Synced app folder
 	  app.vm.synced_folder "app", "/home/ubuntu/app"
+	  app.vm.synced_folder "./environment/app", "/home/ubuntu/copy"
+
+	  # app.vm.provision "file", source: "./.bashrc", destination: ".bashrc"
 
 	  # provision 
 	  app.vm.provision "shell", path: "environment/app/provision.sh"
