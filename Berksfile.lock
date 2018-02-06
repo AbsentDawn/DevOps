@@ -1,0 +1,11 @@
+DEPENDENCIES
+  mongoDB
+    git: git@github.com:AbsentDawn/MongoDB-Chef.git
+    revision: 3f2a60e4cdbaa9c23f71bd62f159864d3549b509
+  node
+    git: git@github.com:AbsentDawn/Node-Chef.git
+    revision: 57d829f0dba2d0163685f698dcde969cb05094f5
+
+GRAPH
+  mongoDB (0.1.0)
+  node (0.1.0)

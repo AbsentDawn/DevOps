@@ -17,7 +17,7 @@ sudo npm install
 
 sudo apt-get update
 
-apt-get install nginx
+apt-get install nginx§
 
 sudo cp /home/ubuntu/copy/dbvar.sh /etc/profile.d
 sudo cp /home/ubuntu/copy/default /etc/nginx/sites-available

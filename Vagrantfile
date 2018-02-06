@@ -15,14 +15,13 @@ Vagrant.configure("2") do |config|
 	  app.vm.network "private_network", ip: "192.168.10.100"
 	  app.hostsupdater.aliases = ["dev.local"]
 
-	  # Synced app folder
+	  # Synced app folder 
 	  app.vm.synced_folder "app", "/home/ubuntu/app"
-	  app.vm.synced_folder "./environment/app", "/home/ubuntu/copy"
 
-	  # app.vm.provision "file", source: "./.bashrc", destination: ".bashrc"
-
-	  # provision 
-	  app.vm.provision "shell", path: "environment/app/provision.sh"
+	  # privision with chef 
+	  	app.vm.provision "chef_solo" do |chef|
+	  		chef.add_recipe "node::default"
+	  	end
 	end
 
 
@@ -31,10 +30,9 @@ Vagrant.configure("2") do |config|
 	  	db.vm.network "private_network", ip: "192.168.10.150"
 	  	db.hostsupdater.aliases = ["database.local"]
 
-	  	# Synced app folder
-	  	db.vm.synced_folder "environment/db", "/home/ubuntu/db"
-
-	  	# provision 
-	  	db.vm.provision "shell", path: "environment/db/provision.sh"
+	  	# privision with chef 
+	  	db.vm.provision "chef_solo" do |chef|
+	  		chef.add_recipe "mongoDB::default"
+	  	end
   	end
 end
