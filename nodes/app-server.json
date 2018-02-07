@@ -1,0 +1,62 @@
+{
+  "name": "app-server",
+  "normal": {
+    "knife_zero": {
+      "host": "34.243.159.187"
+    },
+    "tags": [
+
+    ]
+  },
+  "automatic": {
+    "fqdn": "ip-172-31-23-170.eu-west-1.compute.internal",
+    "os": "linux",
+    "os_version": "4.4.0-1049-aws",
+    "hostname": "ip-172-31-23-170",
+    "ipaddress": "172.31.23.170",
+    "roles": [
+
+    ],
+    "recipes": [
+
+    ],
+    "platform": "ubuntu",
+    "platform_version": "16.04",
+    "cloud": {
+      "public_ipv4_addrs": [
+        "34.243.159.187"
+      ],
+      "local_ipv4_addrs": [
+        "172.31.23.170"
+      ],
+      "provider": "ec2",
+      "public_hostname": "ec2-34-243-159-187.eu-west-1.compute.amazonaws.com",
+      "local_hostname": "ip-172-31-23-170.eu-west-1.compute.internal",
+      "public_ipv4": "34.243.159.187",
+      "local_ipv4": "172.31.23.170"
+    },
+    "cloud_v2": {
+      "public_ipv4_addrs": [
+        "34.243.159.187"
+      ],
+      "local_ipv4_addrs": [
+        "172.31.23.170"
+      ],
+      "provider": "ec2",
+      "public_hostname": "ec2-34-243-159-187.eu-west-1.compute.amazonaws.com",
+      "local_hostname": "ip-172-31-23-170.eu-west-1.compute.internal",
+      "public_ipv4": "34.243.159.187",
+      "local_ipv4": "172.31.23.170"
+    },
+    "chef_packages": {
+      "ohai": {
+        "version": "13.6.0",
+        "ohai_root": "/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/ohai-13.6.0/lib/ohai"
+      },
+      "chef": {
+        "version": "13.6.4",
+        "chef_root": "/opt/chefdk/embedded/lib/ruby/gems/2.4.0/gems/chef-13.6.4/lib"
+      }
+    }
+  }
+}
