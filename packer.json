@@ -21,11 +21,7 @@
     "ssh_username": "ubuntu",
     "ami_name": "Kevin-App-{{timestamp}}"
   }], 
-  "provisioners": [
-    {
-      "type": "shell",
-      "inline": ["mkdir /home/ubuntu/app"]
-    }, 
+  "provisioners": [ 
     {
       "type": "file",
       "source": "app",
